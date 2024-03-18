@@ -17,7 +17,18 @@
       </select>
     </div>
     <div class="righthead">
-      <p class="profile_icon">V</p>
+      <div class="btn-group">
+        <button
+          class="btn profile_icon"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          V
+        </button>
+        <ul class="dropdown-menu">
+          <li @click="logout"><a class="dropdown-item">Logout</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -44,6 +55,8 @@
   border-radius: 50%;
   font-size: 18px;
   font-weight: 600;
+  border-top-right-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
 }
 
 @media (max-width: 567px) {
@@ -58,4 +71,11 @@
   }
 }
 </style>
-<script></script>
+<script setup>
+import { useRouter } from "vue-router";
+const router = useRouter();
+function logout() {
+  localStorage.clear();
+  router.push("/");
+}
+</script>

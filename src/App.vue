@@ -39,4 +39,8 @@ select {
 .input-group {
   border-radius: 5px;
 }
+.main {
+  position: sticky;
+  top: 60.5px;
+}
 </style>
