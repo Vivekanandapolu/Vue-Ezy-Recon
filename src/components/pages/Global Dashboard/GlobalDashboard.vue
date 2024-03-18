@@ -413,7 +413,7 @@
 import HeaderComp from "./HeaderComp.vue";
 
 export default {
-  mounted() {
+  OnMounted() {
     if (window.innerWidth <= 400) {
       this.mobileWidth = true;
     } else {

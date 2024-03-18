@@ -399,6 +399,7 @@
 <script>
 export default {
   mounted() {
+    console.log(this.$refs);
     const tableRefs = [
       "scrollableTable1",
       "scrollableTable2",

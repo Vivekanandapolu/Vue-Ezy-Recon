@@ -36,4 +36,7 @@ a {
 select {
   font-size: 15px !important;
 }
+.input-group {
+  border-radius: 5px;
+}
 </style>

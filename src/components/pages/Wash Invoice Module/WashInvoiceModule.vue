@@ -73,6 +73,22 @@
                       Discrimination
                     </li></router-link
                   >
+                  <router-link to="/wash-invoice-module/AllConcept">
+                    <li
+                      class="item"
+                      :class="{ active: activeRoute == 'allconcept' }"
+                    >
+                      AllConcepts
+                    </li></router-link
+                  >
+                  <router-link to="/wash-invoice-module/Practice">
+                    <li
+                      class="item"
+                      :class="{ active: activeRoute == 'practice' }"
+                    >
+                      Practice Tab
+                    </li></router-link
+                  >
                 </ul>
               </div>
               <i
